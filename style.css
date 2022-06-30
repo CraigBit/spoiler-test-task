@@ -50,7 +50,7 @@ body {
 /*------------------------------------------------СТИЛИ СПОЙЛЕРА-----------------------------------------------------*/
 
 .spoiler-group {
-  padding: 100px 0px 0px 0px;
+  padding: 100px 0px 50px 0px;
   display: flex;
   flex-direction: column;
 }
@@ -99,7 +99,7 @@ body {
     max-width: 1240px;
   }
   .spoiler-group {
-    padding: 80px 0px 0px 0px;
+    padding: 80px 0px 40px 0px;
   }
   .spoiler-group__title {
     font-size: 48px;
@@ -120,7 +120,7 @@ body {
     max-width: 1106px;
   }
   .spoiler-group {
-    padding: 70px 0px 0px 0px;
+    padding: 70px 0px 35px 0px;
   }
   .spoiler-group__title {
     font-size: 42px;
@@ -144,7 +144,7 @@ body {
     margin-bottom: 50px;
   }
   .spoiler-group {
-    padding: 60px 0px 0px 0px;
+    padding: 60px 0px 30px 0px;
   }
   .spoiler-item__label {
     padding: 24px 0px;
@@ -160,7 +160,7 @@ body {
     max-width: 367px;
   }
   .spoiler-group {
-    padding: 50px 0px 0px 0px;
+    padding: 50px 0px 25px 0px;
   }
   .spoiler-group__title {
     font-size: 30px;
