@@ -1,0 +1,209 @@
+/*-----------------------------------------------------ОБНУЛЕНИЕ-----------------------------------------------------*/
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Roboto;
+  background: #ffffff;
+}
+
+/*---------------------------------------------------КОНТЕЙНЕР-------------------------------------------------------*/
+
+.container {
+  max-width: 1640px;
+  padding: 0 20px;
+  margin: 0px auto;
+}
+
+/*------------------------------------------------СТИЛИ СПОЙЛЕРА-----------------------------------------------------*/
+
+.spoiler-group {
+  padding: 100px 0px 221px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.spoiler-group__title {
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  margin-bottom: 80px;
+}
+
+.spoiler-group__item {
+  border-top: 1px solid #e6e6e6;
+}
+
+.spoiler-group__item:last-child {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.spoiler-item__label {
+  position: relative;
+  cursor: pointer;
+  padding: 30px 0px;
+  user-select: none;
+  font-size: 36px;
+  line-height: 120%;
+  margin-right: 70px;
+}
+
+.spoiler-item__content {
+  padding: 30px 0px 40px 0px;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000402;
+  opacity: 0.8;
+}
+
+.spoiler-body {
+  display: none;
+}
+
+/*---------------------------------------------МЕДИА ЗАПРОСЫ-------------------------------------------------*/
+
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1240px;
+  }
+  .spoiler-group {
+    padding: 80px 0px 0px 0px;
+  }
+  .spoiler-group__title {
+    font-size: 48px;
+    margin-bottom: 60px;
+  }
+  .spoiler-item__label {
+    padding: 24px 0px;
+    font-size: 27px;
+  }
+  .spoiler-item__content {
+    padding: 20px 0px 30px 0px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1106px;
+  }
+  .spoiler-group {
+    padding: 70px 0px 0px 0px;
+  }
+  .spoiler-group__title {
+    font-size: 42px;
+    margin-bottom: 56px;
+  }
+  .spoiler-item__label {
+    padding: 20px 0px;
+    font-size: 24px;
+  }
+  .spoiler-item__content {
+    padding: 16px 0px 24px 0px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 728px;
+  }
+  .spoiler-group__title {
+    margin-bottom: 50px;
+  }
+  .spoiler-group {
+    padding: 60px 0px 0px 0px;
+  }
+  .spoiler-item__label {
+    padding: 24px 0px;
+    font-size: 27px;
+  }
+  .spoiler-item__content {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 367px;
+  }
+  .spoiler-group {
+    padding: 50px 0px 0px 0px;
+  }
+  .spoiler-group__title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .spoiler-item__label {
+    padding: 20px 0px;
+    font-size: 24px;
+  }
+  .spoiler-item__content {
+    padding: 16px 0px 20px 0px;
+  }
+}
+
+/* ---------------------------------------КРЕСТИК------------------------------------------------ */
+
+.spoiler-item__label::before {
+  left: 98%;
+  margin-top: 5px;
+  margin-left: 65px;
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: linear-gradient(#02818a 0 0), linear-gradient(#02818a 0 0);
+  background-position: center;
+  background-size: 100% 2px, 2px 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.spoiler-item__label::first-line {
+  margin-right: 20px;
+}
+
+/* ---------------------------------------ТОГГЛ КЛАССЫ------------------------------------------- */
+
+.title-active {
+  padding-bottom: 0;
+  color: #02818a;
+}
+
+.title-active::before {
+  transform: rotate(45deg);
+}
