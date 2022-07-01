@@ -183,16 +183,16 @@ body {
 
 /* ---------------------------------------ТОГГЛ КЛАССЫ------------------------------------------- */
 
-.title-active {
+.label-active {
   padding-bottom: 0;
   color: #02818a;
 }
 
-.title-active::before {
+.label-active::before {
   transform: rotate(45deg);
 }
 
-.spoiler-body {
+.spoiler-content {
   transition: height 0.3s ease, padding 0.3s ease;
   height: 0;
   padding: 0;
