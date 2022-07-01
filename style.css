@@ -88,10 +88,6 @@ body {
   opacity: 0.8;
 }
 
-.spoiler-body {
-  display: none;
-}
-
 /*---------------------------------------------МЕДИА ЗАПРОСЫ-------------------------------------------------*/
 
 @media (max-width: 1440px) {
@@ -206,4 +202,8 @@ body {
 
 .title-active::before {
   transform: rotate(45deg);
+}
+
+.spoiler-body {
+  display: none;
 }
