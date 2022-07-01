@@ -76,6 +76,7 @@ body {
   line-height: 150%;
   color: #000402;
   opacity: 0.8;
+  transition: padding 0.3s ease;
 }
 
 /*---------------------------------------------МЕДИА ЗАПРОСЫ-------------------------------------------------*/
@@ -177,10 +178,7 @@ body {
   background-size: 100% 2px, 2px 100%;
   background-repeat: no-repeat;
   cursor: pointer;
-}
-
-.spoiler-item__label::first-line {
-  margin-right: 20px;
+  transition: transform 0.3s ease 0s;
 }
 
 /* ---------------------------------------ТОГГЛ КЛАССЫ------------------------------------------- */
@@ -195,5 +193,9 @@ body {
 }
 
 .spoiler-body {
-  display: none;
+  transition: height 0.3s ease, padding 0.3s ease;
+  height: 0;
+  padding: 0;
+  visibility: hidden;
+  overflow: hidden;
 }
